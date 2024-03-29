@@ -337,20 +337,20 @@ linux_aarch64_sources := \
   linux-aarch64/crypto/sha/sha256-armv8.S\
   linux-aarch64/crypto/sha/sha512-armv8.S\
 
-linux_arm_sources := \
-  linux-arm/crypto/aes/aes-armv4.S\
-  linux-arm/crypto/aes/aesv8-armx32.S\
-  linux-arm/crypto/aes/bsaes-armv7.S\
-  linux-arm/crypto/bn/armv4-mont.S\
-  linux-arm/crypto/modes/ghash-armv4.S\
-  linux-arm/crypto/modes/ghashv8-armx32.S\
-  linux-arm/crypto/sha/sha1-armv4-large.S\
-  linux-arm/crypto/sha/sha256-armv4.S\
-  linux-arm/crypto/sha/sha512-armv4.S\
-  src/crypto/chacha/chacha_vec_arm.S\
-  src/crypto/cpu-arm-asm.S\
-  src/crypto/curve25519/asm/x25519-asm-arm.S\
-  src/crypto/poly1305/poly1305_arm_asm.S\
+# linux_arm_sources := \
+#   linux-arm/crypto/aes/aes-armv4.S\
+#   linux-arm/crypto/aes/aesv8-armx32.S\
+#   linux-arm/crypto/aes/bsaes-armv7.S\
+#   linux-arm/crypto/bn/armv4-mont.S\
+#   linux-arm/crypto/modes/ghash-armv4.S\
+#   linux-arm/crypto/modes/ghashv8-armx32.S\
+#   linux-arm/crypto/sha/sha1-armv4-large.S\
+#   linux-arm/crypto/sha/sha256-armv4.S\
+#   linux-arm/crypto/sha/sha512-armv4.S\
+#   src/crypto/chacha/chacha_vec_arm.S\
+#   src/crypto/cpu-arm-asm.S\
+#   src/crypto/curve25519/asm/x25519-asm-arm.S\
+#   src/crypto/poly1305/poly1305_arm_asm.S\
 
 linux_x86_sources := \
   linux-x86/crypto/aes/aes-586.S\

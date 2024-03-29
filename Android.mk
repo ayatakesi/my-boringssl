@@ -27,7 +27,9 @@ LOCAL_MODULE := libcrypto
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/src/include
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/Android.mk $(LOCAL_PATH)/crypto-sources.mk
 LOCAL_CFLAGS += -fvisibility=hidden -DBORINGSSL_SHARED_LIBRARY -DBORINGSSL_IMPLEMENTATION -DOPENSSL_SMALL -Wno-unused-parameter
+LOCAL_CFLAGS_arm = -DOPENSSL_STATIC_ARMCAP -DOPENSSL_NO_ASM
 LOCAL_SDK_VERSION := 9
+LOCAL_LDFLAGS = --no-undefined
 # sha256-armv4.S does not compile with clang.
 LOCAL_CLANG_ASFLAGS_arm += -no-integrated-as
 LOCAL_CLANG_ASFLAGS_arm64 += -march=armv8-a+crypto
