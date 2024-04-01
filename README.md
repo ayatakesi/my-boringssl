@@ -22,11 +22,12 @@ $: git checkout -b my/nougat-release
 $: patch -p1 < PATCH_FOR_BORINGSSL.patch
 ```
 
-4. 上記patch ファイルとpatch適用後ファイルをcommitしてgithubに準備した空レポジトリにpush
+4. 上記patch ファイルとpatch適用後ファイルをcommitして空レポジトリにpush
 
 ```bash
 $: git add -A
 $: git commit -m 'nanika commit messages...'
+$: gh repo create my-boringssl --public
 $: git remote add mine https://github.com/JIBUN/my-boringssl.git
 $: git branch -M my/nougat-release
 $: git push -u mine my/nougat-release
