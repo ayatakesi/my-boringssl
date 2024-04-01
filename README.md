@@ -1,5 +1,5 @@
 # libcrypto
-GNU Emacs30.0.50に含まれる`java/INSTALL`にしたがってパッチを適用したlibcryptoモジュールのレポジトリ。
+GNU Emacs30.0.50に含まれる`java/INSTALL`にしたがってパッチを適用したlibcryptoモジュール(libselinuxの依存モジュール)のレポジトリ。
 
 # 作成した手順
 1. [Google Gitのboringssl](https://android.googlesource.com/platform/external/boringssl)をclone
